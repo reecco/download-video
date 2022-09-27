@@ -1,0 +1,12 @@
+<%- include('./partials/header'); -%>
+<%- include('./partials/navbar'); -%>
+
+    <section class="notfound">
+        <h1>Page not found</h1>
+    </section>
+    <script>
+        setTimeout(() => {
+            window.location.replace('/');
+        }, 5000);
+    </script>
+<%- include('./partials/footer'); -%>

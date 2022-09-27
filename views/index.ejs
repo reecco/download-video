@@ -1,0 +1,13 @@
+<%- include('./partials/header'); -%>
+<%- include('./partials/navbar'); -%>
+
+    <section class="download">
+        <div class="form-download">
+            <h1 class="title-download">Download video</h1>
+            <form action="/download" method="post">
+                <input type="text" name="link" id="link" class="link" placeholder="https://www.youtube.com/watch?v=ggG9ySCChYw">
+                <button class="btn-download">Download</button>
+            </form>
+        </div>
+    </section>
+<%- include('./partials/footer'); -%>

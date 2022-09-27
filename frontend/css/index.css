@@ -1,0 +1,257 @@
+/* Initial global */
+
+body {
+    background-color: #f9fbfb;
+}
+
+/* End global */
+
+/* Initial navbar */
+
+.menu {
+    margin-top: 8%;
+    background-color: #fffefe;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    border-top-right-radius: 12px;
+    border-top-left-radius: 12px;
+}
+
+.list {
+    display: flex;
+    justify-content: center;
+}
+
+.item {
+    margin: 10px;
+    font-size: 1.5rem;
+    transition: 0.5s;
+    font-size: 1.5rem;
+}
+
+.item:hover {
+    scale: 1.05;
+    transition: 0.5s;
+}
+
+.item::after {
+    content: "";
+    width: 0px;
+    height: 1px;
+    display: block;
+    background-color: black;
+    transition: 500ms;
+}
+
+.item:hover::after {
+    width: 100%;
+}
+
+/* End navbar */
+
+/* Initial index.ejs */
+
+/* body {
+    width: 100%;
+    height: 100%;
+    background-color: #f9eeee;
+    background: linear-gradient(-45deg, #fbffff, #d6faf9, #d4d3db, #92d1cf, #c5ded8);
+    background: linear-gradient(-45deg, #ee7752, #e73c7e, #9581F4, #23a6d5, #23d5ab);
+    background: linear-gradient(-45deg, #ffffff, #f6eef1, #f5f4fa, #f0f0f0, #eaf9f5);
+    background-size: 400% 400%;
+    animation: gradient 10s ease infinite;
+    border-radius: 20px;
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+} */
+
+.download {
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    background-color: #ffffff;
+    /* border-radius: 12px; */
+    border-bottom-left-radius: 12px;
+    border-bottom-right-radius: 12px;
+}
+
+.form-download {
+    width: 100%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.title-download {
+    padding-top: 10%;
+    text-align: center;
+    font-size: 3rem;
+    text-shadow: 2px 1px 1px #2a2828;
+    font-weight: 500;
+}
+
+form {
+    margin-top: 5%;
+    width: 50%;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    flex-direction: column;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 10px;
+    padding-bottom: 20px;
+}
+
+.link, .btn-download {
+    margin: 10px;
+}
+
+.link {
+    height: 50px;
+    font-size: 25px;
+    background-color: #fffefe;
+}
+
+.link:hover {
+    border-color: rgb(232, 223, 223);
+    opacity: 0.9;
+}
+
+.link:focus {
+    outline-color: rgb(232, 223, 223);;
+}
+
+.btn-download {
+    color: #FFFFFF;
+    height: 40px;
+    font-size: 20px;
+    background-color: rgb(237, 65, 50);
+    transition: 1s;
+    font-weight: 700;
+    border-radius: 10px;
+}
+
+.btn-download:hover {
+    transition: 1s;
+    scale: 1.025;
+    cursor: pointer;
+}
+
+.btn-download:active {
+    scale: 1;
+    transition: 0.1s;
+}
+
+/* End index.ejs */
+
+/* Initial about.ejs */
+
+.container {
+    margin-top: 5%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.about .container h1 {
+    font-size: 3rem;
+}
+
+/* End about.ejs */
+
+/* Initial footer */
+
+footer {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    margin-bottom: 2.5%;
+}
+
+footer a {
+    color: #42939e;
+    text-decoration: underline;
+}
+
+footer a:hover {
+    color: black;
+}
+
+footer p {
+    font-size: 1.2rem;
+}
+
+/* End footer */
+
+/* Initial error.ejs */
+
+.error {
+    margin-top: 5%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.error h1 {
+    font-size: 1.3rem;
+}
+
+.message-error {
+    margin-top: 2%;
+    font-size: 1.2rem;
+}
+
+/* End error.ejs */
+
+/* Initial invalid-url.ejs */
+
+.invalid-url {
+    margin-top: 5%;
+}
+
+.invalid-url h1 {
+    font-size: 1.3rem;
+    text-align: center;
+}
+
+.message-about {
+    margin-top: 2%;
+    font-size: 1.2rem;
+}
+
+.message-about i {
+    text-decoration: underline;
+}
+
+/* End invalid-url.ejs */
+
+/* Initial not-found.ejs */
+
+.notfound {
+    margin-top: 5%;
+}
+
+.notfound h1 {
+    text-align: center;
+    font-size: 3rem;
+}
+
+/* End not-found.ejs */

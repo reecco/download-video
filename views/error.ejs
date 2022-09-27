@@ -1,0 +1,15 @@
+<%- include('./partials/header'); -%>
+<%- include('./partials/navbar'); -%>
+
+    <section class="error">
+        <h1>An error occurred, please verify that the URL is valid and try again.</h1>
+        <% if (error) { %>
+            <p class="message-error"><%= error %></p>
+        <% } %>
+    </section>
+    <script>
+        // setTimeout(() => {
+        //     window.location.replace('/');
+        // }, 5000)
+    </script>
+<%- include('./partials/footer'); -%>
