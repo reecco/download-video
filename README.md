@@ -1,3 +1,5 @@
+# Download video
+
 ## How to use
 
 Enter the terminal and type
@@ -21,7 +23,7 @@ npm install body-parser --save
 npm install ejs --save
 ````
 ````
-npm install ytdl-core
+npm install ytdl-core --save
 ````
 
 To run the project, type
