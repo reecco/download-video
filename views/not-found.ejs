@@ -2,11 +2,12 @@
 <%- include('./partials/navbar'); -%>
 
     <section class="notfound">
-        <h1>Page not found</h1>
+        <h1 class="error">Page not found</h1>
+        <p class="message-error"><%= message %>.</p>
     </section>
-    <script>
+    <!-- <script>
         setTimeout(() => {
             window.location.replace('/');
         }, 5000);
-    </script>
+    </script> -->
 <%- include('./partials/footer'); -%>

@@ -1,0 +1,16 @@
+<%- include('./partials/header'); -%>
+<%- include('./partials/navbar'); -%>
+
+    <section class="download">
+        <div class="form-download">
+            <h2><%= infos.title %></h2>
+            <form action="/download" method="post" class="form-url-download">
+                <iframe src="<%= infos.urlEmbed %>" frameborder="0"></iframe>
+                <input type="hidden" name="url" value="<%= infos.url %>">
+                <input type="hidden" name="filter" value="<%= filter %>">
+                <input type="hidden" name="title" value="<%= infos.title %>">
+                <button class="btn-download">Download</button>
+            </form>
+        </div>
+    </section>
+<%- include('./partials/footer'); -%>
