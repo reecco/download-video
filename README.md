@@ -20,16 +20,7 @@ cd download-video
 
 Install project dependencies
 ````
-npm install express --save
-````
-````
-npm install body-parser --save
-````
-````
-npm install ejs --save
-````
-````
-npm install ytdl-core --save
+npm install express body-parser ejs ytdl-core nodemon --save
 ````
 
 To run the project, type
