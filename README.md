@@ -20,7 +20,7 @@ cd download-video
 
 Install project dependencies
 ````
-npm install express body-parser ejs ytdl-core nodemon --save
+npm install
 ````
 
 To run the project, type
